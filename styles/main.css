@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 3rem;
+}
+.container img {
+  width: 12rem;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container .content h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.container .content .subtitle {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.45);
+}
+.container .content .subtitle::after {
+  content: "";
+  display: block;
+  height: 0.6rem;
+  margin: 0.5rem auto 0;
+  background: url(../assets/bullets.svg) center no-repeat;
+  background-size: contain;
+}
+.container .content .startNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem;
+  width: 100%;
+  margin: 2.5rem 0 1rem;
+  background: linear-gradient(180deg, #E26972 0%, #9F5F91 99.99%, #572C57 100%);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.container .content .loginText {
+  font-size: 1.2rem;
+  color: #7C7C7C;
+}
+.container .content .loginText span {
+  font-weight: 600;
+  color: #8A4E7D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body, input, textarea, button {
+  font-family: "Signika", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}/*# sourceMappingURL=main.css.map */
