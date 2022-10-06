@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #F5F5F5;
+}
+.container .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 0 0 70% 70%;
+}
+.container .content {
+  padding: 0 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+.container .content .nameOfUser {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #8A4E7D;
+}
+.container .content p {
+  font-size: 1.2rem;
+  color: #7B7B7B;
+  line-height: 1.5;
+}
+.container .content .enterSession {
+  margin-top: 60px;
+}
+.container .content .enterSession p {
+  color: #B4B4B4;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 20px;
+}
+.container .content .enterSession form input {
+  width: 50px;
+  height: 60px;
+  border-radius: 16px;
+  background: #FCFCFC;
+  box-shadow: inset 1.00694px 2.01389px 4.02778px rgba(0, 0, 0, 0.16);
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #8A4E7D;
+}
+.container .content .enterSession form input::-moz-placeholder {
+  color: #dddddd;
+}
+.container .content .enterSession form input:-ms-input-placeholder {
+  color: #dddddd;
+}
+.container .content .enterSession form input::placeholder {
+  color: #dddddd;
+}
+.container .content .enterSession form input + input {
+  margin-left: 5px;
+}
+.container .content .enterSession form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  background: linear-gradient(180deg, #E26972 0%, #9F5F91 99.99%, #572C57 100%);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.container .content .register {
+  margin-top: 3rem;
+}
+.container .content .register span {
+  font-weight: 700;
+  color: #B23737;
+}/*# sourceMappingURL=login.css.map */
