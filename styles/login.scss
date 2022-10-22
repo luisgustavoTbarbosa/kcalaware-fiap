@@ -75,14 +75,16 @@
                     margin-top: 1.5rem;
                     background: linear-gradient(180deg, #E26972 0%, #9F5F91 99.99%, #572C57 100%);
                     border-radius: 20px;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    color: #fff;
-                    text-decoration: none;
                     border: none;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
+
+                    a {
+                        color: #fff;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }

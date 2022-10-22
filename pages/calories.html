@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kcalaware</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/calories.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="head">
+                    <div class="modal-button calendar">
+                        <img src="../assets/calendar.svg" alt="Calendario">
+                    </div>
+                    <p>Sábado, 17/09</p>
+                    <div class="modal-button ranking">
+                        <img src="../assets/ranking.svg" alt="Ranking">
+                    </div>
+                </div>
+                <div class="calories-value">
+                    <p class="last-kcal">690kcal</p>
+                    <p class="kcal">1896kcal</p>
+                    <p class="label-kcal">Valor diário restante</p>
+                </div>
+            </header>
+            <main>
+                <div class="card-food water">
+                    <div>
+                        <div class="title">
+                            <p>Água</p>
+                            <span>0.9L (75%)</span>
+                        </div>
+                        <p class="subtitle">Restante recomendado 1.4L</p>
+                    </div>
+                    <div class="counter">
+                        <button class="button-water">
+                            <img src="../assets/subtract.svg" alt="Subtrair">
+                        </button>
+                        <p class="label-qnt">0.5L</p>
+                        <button class="button-water">
+                            <img src="../assets/plus.svg" alt="Adicionar">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="list-cards daily-meals">
+                    <div>
+                        <p class="title-meals">Refeições diárias</p>
+                        <button>
+                            <img src="../assets/pencil.svg" alt="editar">
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="card-food breakfast">
+                                <div>
+                                    <div class="title">
+                                        <p>Café da manhã</p>
+                                        <span>306Kcal</span>
+                                    </div>
+                                    <p class="subtitle">Recomendado 447kcal</p>
+                                </div>
+                                <div class="counter">
+                                    <button class="button-add">
+                                        <img src="../assets/plus.svg" alt="Adicionar">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-food lunch">
+                                <div>
+                                    <div class="title">
+                                        <p>Almoço</p>
+                                        <span>200Kcal</span>
+                                    </div>
+                                    <p class="subtitle">Recomendado 210kcal</p>
+                                </div>
+                                <div class="counter">
+                                    <button class="button-add">
+                                        <img src="../assets/plus.svg" alt="Adicionar">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-cards burn">
+                    <div>
+                        <p class="title-meals">Queima</p>
+                        <button>
+                            <img src="../assets/pencil.svg" alt="editar">
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="card-food exercises">
+                                <div>
+                                    <div class="title">
+                                        <p>Exercícios</p>
+                                    </div>
+                                </div>
+                                <div class="counter">
+                                    <button class="button-add">
+                                        <img src="../assets/plus.svg" alt="Adicionar">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+            <div class="addFoodModal">
+                <div class="range-closeModal">
+                    <button class="closeModal"></button>
+                </div>
+                <div class="list-foods">
+                    <input class="searchFood" type="text" placeholder="Pesquise pelo alimento consumido">
+                    <ul>
+                        <li>
+                            <div class="checkbox"></div>
+                            <div>
+                                <p>283 kcal</p>
+                                <p class="nameFood">Frango assado</p>
+                                <p>1 peito (172g)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox"></div>
+                            <div>
+                                <p>283 kcal</p>
+                                <p class="nameFood">Frango assado</p>
+                                <p>1 peito (172g)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox"></div>
+                            <div>
+                                <p>283 kcal</p>
+                                <p class="nameFood">Frango assado</p>
+                                <p>1 peito (172g)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox"></div>
+                            <div>
+                                <p>283 kcal</p>
+                                <p class="nameFood">Frango assado</p>
+                                <p>1 peito (172g)</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="addFood">Adicionar alimento</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../scripts/calories.js"></script>
+    </body>
+</html>

@@ -1,0 +1,263 @@
+body {
+  font-family: "Archivo", sans-serif;
+  background: #F5F5F5;
+}
+body .container {
+  position: relative;
+}
+body .addFoodModal {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 80vh;
+  padding: 1rem 3rem 3rem;
+  border-radius: 25px 25px 0 0;
+  background: #dfdddd;
+}
+body .addFoodModal.open {
+  display: block;
+}
+body .addFoodModal .range-closeModal {
+  display: flex;
+  height: 23px;
+  width: 100%;
+  padding: 10px 0;
+}
+body .addFoodModal .range-closeModal .closeModal {
+  height: 3px;
+  width: 100%;
+  border: none;
+  background: #000000;
+  border-radius: 5px;
+}
+body .addFoodModal .list-foods {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+body .addFoodModal .list-foods .searchFood {
+  height: 3rem;
+  margin: 1.5rem 0 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.16);
+}
+body .addFoodModal .list-foods ul {
+  height: 281px;
+  overflow: scroll;
+}
+body .addFoodModal .list-foods ul li + li {
+  margin-top: 1rem;
+}
+body .addFoodModal .list-foods ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+  list-style: none;
+}
+body .addFoodModal .list-foods ul li .checkbox {
+  border: 1px solid black;
+  background: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+body .addFoodModal .list-foods ul li p + p {
+  margin-top: 5px;
+}
+body .addFoodModal .list-foods ul li p:first-child {
+  font-weight: 500;
+  color: #8A4E7D;
+}
+body .addFoodModal .list-foods ul li p.nameFood {
+  color: #2E2E2E;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+body .addFoodModal .list-foods ul li p:last-child {
+  color: #767676;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+body .addFoodModal .list-foods .addFood {
+  height: 4rem;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #E26972 0%, #9F5F91 99.99%, #572C57 100%);
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+body header {
+  background: url(../assets/calories-bg.svg) bottom no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 1.5rem;
+}
+body header .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+body header .head .modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #F2F5FC;
+  border-radius: 12px;
+  border: 1px solid #E0E6F3;
+}
+body header .head .modal-button img {
+  height: 1.2rem;
+}
+body header .head p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333333;
+}
+body header .calories-value {
+  height: 16rem;
+  background: url(../assets/calories-v-bg.svg) center no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header .calories-value .last-kcal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E26972;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+body header .calories-value .last-kcal::before {
+  content: "";
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  background: url(../assets/fire.svg) center no-repeat;
+  background-size: contain;
+  margin-right: 2px;
+}
+body header .calories-value .kcal {
+  color: #8A4E7D;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+body header .calories-value .label-kcal {
+  color: #9D9D9D;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body main {
+  padding: 2rem;
+}
+body main .card-food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+}
+body main .card-food.water {
+  border-left: 10px solid #577EFE;
+}
+body main .card-food.water .title p {
+  color: #577EFE;
+}
+body main .card-food.breakfast {
+  border-left: 10px solid #E9D132;
+}
+body main .card-food.breakfast .title p {
+  color: #E9D132;
+}
+body main .card-food.lunch {
+  border-left: 10px solid #E26972;
+}
+body main .card-food.lunch .title p {
+  color: #E26972;
+}
+body main .card-food.exercises {
+  border-left: 10px solid #FF655B;
+}
+body main .card-food.exercises .title p {
+  color: #FF655B;
+}
+body main .card-food .title {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+body main .card-food .subtitle {
+  color: #9DA8C3;
+  font-size: 0.7rem;
+  letter-spacing: 0.19px;
+}
+body main .card-food .counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body main .card-food .counter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  background: linear-gradient(180deg, #E26972 0%, #9F5F91 66.15%, #572C57 100%);
+  border-radius: 100%;
+  border: none;
+}
+body main .card-food .counter button img {
+  width: 1rem;
+}
+body main .list-cards {
+  margin-top: 1.5rem;
+}
+body main .list-cards > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+body main .list-cards > div .title-meals {
+  color: #1A1C24;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+body main .list-cards > div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  background: #E0E6F3;
+}
+body main .list-cards ul li {
+  list-style: none;
+}
+body main .list-cards ul li + li {
+  margin-top: 1rem;
+}/*# sourceMappingURL=calories.css.map */
