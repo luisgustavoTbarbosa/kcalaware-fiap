@@ -25,7 +25,7 @@ function closeModalFood() {
 inputSearchFood.addEventListener('keyup', getSearchFood)
 function getSearchFood() {
     const listFoodsDom = document.querySelector('.list-foods ul');
-    const foodSearch = api.filter(food => food.description.toLowerCase().startsWith(inputSearchFood.value));
+    const foodSearch = api.filter(food => food.description.toLowerCase().startsWith(inputSearchFood.value.toLowerCase()));
     console.log(foodSearch)
     listFoodsDom.innerHTML = ` `
 
