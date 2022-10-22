@@ -48,7 +48,7 @@ body .addFoodModal .list-foods .searchFood {
   box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.16);
 }
 body .addFoodModal .list-foods ul {
-  height: 20rem;
+  height: 23rem;
   overflow: scroll;
 }
 body .addFoodModal .list-foods ul li + li {
@@ -58,7 +58,7 @@ body .addFoodModal .list-foods ul li {
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 6rem;
+  height: 7rem;
   padding: 1rem;
   border-radius: 10px;
   background: #ffffff;

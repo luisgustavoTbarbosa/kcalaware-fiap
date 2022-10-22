@@ -53,7 +53,7 @@ body {
             }
     
             ul {
-                height: calc(3 * 6rem + 2rem);
+                height: calc(3 * 7rem + 2rem);
                 overflow: scroll;
 
                 li + li {
@@ -64,7 +64,7 @@ body {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    height: 6rem;
+                    height: 7rem;
                     padding: 1rem;
                     border-radius: 10px;
                     background: #ffffff;
