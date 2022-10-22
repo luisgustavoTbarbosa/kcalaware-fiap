@@ -124,38 +124,14 @@
                     <button class="closeModal"></button>
                 </div>
                 <div class="list-foods">
-                    <input class="searchFood" type="text" placeholder="Pesquise pelo alimento consumido">
+                    <input class="searchFood" onchange="getSearchFood()" type="text" placeholder="Pesquise pelo alimento consumido">
                     <ul>
-                        <li>
+                        <li class="item-loading">
                             <div class="checkbox"></div>
                             <div>
-                                <p>283 kcal</p>
-                                <p class="nameFood">Frango assado</p>
-                                <p>1 peito (172g)</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox"></div>
-                            <div>
-                                <p>283 kcal</p>
-                                <p class="nameFood">Frango assado</p>
-                                <p>1 peito (172g)</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox"></div>
-                            <div>
-                                <p>283 kcal</p>
-                                <p class="nameFood">Frango assado</p>
-                                <p>1 peito (172g)</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox"></div>
-                            <div>
-                                <p>283 kcal</p>
-                                <p class="nameFood">Frango assado</p>
-                                <p>1 peito (172g)</p>
+                                <p></p>
+                                <p class="nameFood"></p>
+                                <p></p>
                             </div>
                         </li>
                     </ul>
@@ -164,6 +140,6 @@
             </div>
         </div>
 
-        <script src="../scripts/calories.js"></script>
+        <script type="module" src="../scripts/calories.js"></script>
     </body>
 </html>

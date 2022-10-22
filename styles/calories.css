@@ -14,7 +14,7 @@ body .addFoodModal {
   height: 80vh;
   padding: 1rem 3rem 3rem;
   border-radius: 25px 25px 0 0;
-  background: #dfdddd;
+  background: #eaeaea;
 }
 body .addFoodModal.open {
   display: block;
@@ -63,9 +63,31 @@ body .addFoodModal .list-foods ul li {
   background: #ffffff;
   list-style: none;
 }
+body .addFoodModal .list-foods ul li.item-loading .checkbox {
+  border: 1px solid #F4F4F4;
+  background: #F4F4F4;
+}
+body .addFoodModal .list-foods ul li.item-loading p:first-child {
+  height: 1rem;
+  width: 5rem;
+  background: #F8F8F8;
+  color: transparent;
+}
+body .addFoodModal .list-foods ul li.item-loading p.nameFood {
+  height: 1rem;
+  width: 10rem;
+  background: #E8E8E8;
+  color: transparent;
+}
+body .addFoodModal .list-foods ul li.item-loading p:last-child {
+  height: 0.8rem;
+  width: 7rem;
+  background: #F4F4F4;
+  color: transparent;
+}
 body .addFoodModal .list-foods ul li .checkbox {
-  border: 1px solid black;
-  background: white;
+  border: 1px solid #000000;
+  background: #ffffff;
   height: 15px;
   width: 15px;
   border-radius: 100%;

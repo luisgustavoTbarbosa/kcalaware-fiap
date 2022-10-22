@@ -15,7 +15,7 @@ body {
         height: 80vh;
         padding: 1rem 3rem 3rem;
         border-radius: 25px 25px 0 0;
-        background: #dfdddd;
+        background: #eaeaea;
 
         &.open {
             display: block;
@@ -68,10 +68,41 @@ body {
                     border-radius: 10px;
                     background: #ffffff;
                     list-style: none;
-    
+                    
+                    &.item-loading {
+                        .checkbox {
+                            border: 1px solid #F4F4F4;
+                            background: #F4F4F4;
+                        }
+
+                        p {
+                            
+                            &:first-child {
+                                height: 1rem;
+                                width: 5rem;
+                                background: #F8F8F8;
+                                color: transparent;
+                            }
+                            
+                            &.nameFood {
+                                height: 1rem;
+                                width: 10rem;
+                                background: #E8E8E8;
+                                color: transparent;
+                            }
+        
+                            &:last-child {
+                                height: .8rem;
+                                width: 7rem;
+                                background: #F4F4F4;
+                                color: transparent;
+                            }
+                        }
+                    }
+
                     .checkbox {
-                        border: 1px solid black;
-                        background: white;
+                        border: 1px solid #000000;
+                        background: #ffffff;
                         height: 15px;
                         width: 15px;
                         border-radius: 100%;
